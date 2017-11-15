@@ -1,7 +1,11 @@
 package com.example.maven.Exerc019_ex1;
 
 import java.util.Random;
-
+/***
+ * 
+ * @author mads
+ * Class of Mathods to randomize values 
+ */
 public class MyRandomMethods {
 	Random random = new Random();
 	
