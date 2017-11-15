@@ -9,9 +9,21 @@ public class MethodsTest {
 
 	@Test
 	public void test1() {
-		int result = mrm.randomBetween1And10();
+		//This will give us 100 000 tests. 
+		int result= 0;
+		for(int i= 0; i<100000; i++) {
+			result = mrm.randomBetween1And10();
+			System.out.println("Iteration: "+i+". Testing method with value: "+result);
+			
+			assertTrue((result >=1)&& (result <=10));
+		}
 		
-		assertTrue((result >=1)&& (result <=10));
+		
+		//Utan loop
+//		int result = mrm.randomBetween1And10();
+//		System.out.println("Testing method with value: "+result);
+//		
+//		assertTrue((result >=1)&& (result <=10));
 	}
 	
 	@Test
